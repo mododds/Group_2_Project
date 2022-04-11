@@ -102,7 +102,7 @@ All the csv files can be found in **Resources/Postgres_Input**.
 - More Data, Increasing Scope and Time. In this model, we use 89 companies, that are not enough, and we only get the 2022 ESG score because the old information is not for the public. 
 ### Train and Test
 We have 52 stock info, we choose 11 as the Test set and other is Train set
-### 
+### current accuracy score
 A perfect mean absolute/squared error value is 0.0, which means that all predictions matched the expected values exactly.
 This model current accuracy score is very low:
 - Mean squared error value is 62012.18
