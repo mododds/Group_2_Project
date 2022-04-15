@@ -150,8 +150,18 @@ The tables contains the data from yahoo finance as well as the tables generated 
 
 The final tableau storyboard presentation is available in [here](https://public.tableau.com/app/profile/sucharita.bhattacharjee/viz/ESG_Analysis/ESGAnalysisforpredictedstocks?publish=yes)
 
-## presentation 
-The presentation is available [here](https://docs.google.com/presentation/d/1v7ZUbO-Ruz_PWBoh0hCuRYt4P9jFr0jfmyfjzph_FJQ/edit?usp=sharing)
+## Presentation 
+The presentation provides a glimpse about our project **ESG and You** is available [here](https://docs.google.com/presentation/d/1v7ZUbO-Ruz_PWBoh0hCuRYt4P9jFr0jfmyfjzph_FJQ/edit?usp=sharing)
+
+## What could have been done differently
+* The machine learning model for correlation between ESG and stock prices had only 55 datapoints . We hoped to get historical esg data but it was at a very high price on bloomberg, quandl etc. 
+   - So we just ran the ML on 55 datapoints but it gave us r2 of .017 so we could not use the model. 
+   - But,  we already had the scripts for getting stock and esg data from yfinance api and appending to database.we could have generated our data by getting 100 stocks per day and by now we would have 2500 datapoints easily. We could have generated out own dataset on the go.
+
+## Recommendation for future analysis:
+- Improve the MAPE for fbprophet Model.
+- Explore ARIMA, SARIMA for stock prediction
+- Update the stock and esg data periodically so that the analysis stays relevent.
 
 ## Environment dependencies and gitignore files
 The environment dependencies can be found in [requirements.txt](https://github.com/mododds/Group_2_Project/blob/c6ef83c033a2239e7f400a69e772671eb6fa68dc/requirements.txt)
@@ -165,11 +175,11 @@ The ignored files can be found in [.gitignore](https://github.com/mododds/Group_
 - Yicong Luo
 - Sachin Nabar
 
-### Week 4 Roles:
-- The Square Role will focus on managing the git repo [Sucharita]
-- The Triangle Role will focus on updating the slides and presenation [Monica]
-- The Circle Role will focus on finalizing the dashboard [Yicong]
-- The X Roles will focus on  testing & validating the Code [Sachin]
+### Final week Roles:
+- Square: Final updates to the README.md on the project repository [Sucharita]
+- Circle: Ensure all applicable PRs are merged in [Yicong]
+- Triangle: Final touches on visual aspects with the presentation and dashboard. [Monica]
+- X: Review the rubric and ensure the project meets the requirements, and test the code. [Sachin]
 
 Credits:
 - https://www.forbes.com/just-companies/#5d410d762bf0
@@ -181,3 +191,4 @@ Credits:
 - https://deepnote.com/@reslan-al-tinawi/Visualizing-data-with-seaborn-plotly-2hf4mb-sTnC9LyUXbTVKDw
 - https://community.plotly.com/t/how-to-visualize-3-columns-with-boolean-values/36181/2
 - https://help.tableau.com/current/pro/desktop/en-us/dashboards.htm
+- https://facebook.github.io/prophet/docs/quick_start.html#python-api
